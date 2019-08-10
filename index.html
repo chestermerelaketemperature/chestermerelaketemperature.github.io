@@ -13,22 +13,62 @@
 	<!--Personal CSS-->
 	<link rel="stylesheet" href="assets/css/main.css">
 	<!--Personal JS Scripts-->
-	<link rel="script.js" href="/assets/js/javascript">
+	<script type="text/javascript" src="assets/js/javascript"></script>
 	<!--Adobe Font-->
 	<link rel="stylesheet" href="https://use.typekit.net/raq5xur.css">
+	<!--Icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-84817806-4"></script>
 	<script>
-  		window.dataLayer = window.dataLayer || [];
-  		function gtag(){dataLayer.push(arguments);}
-  		gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
 		gtag('config', 'UA-84817806-4');
 	</script>
 
 </head>
 
 <body>
-	<!--Just Testing Keys -->
+	<!--NavBar-->
+	<div class="topnav" id="myTopnav">
+		<a href="#Temperature" class="active">Temperature</a>
+		<a href="#Social">Social</a>
+		<a href="#Contact">Contact</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+
+	<div class="container">
+		<div class="measure">
+			<div class="air">
+				<p class="snapshot-air" id=data></p>
+				<p class="info_text">AIR</p>
+			</div>
+		</div>
+
+		<div class="measure">
+			<div class="water">
+				<p class="snapshot-water" id=data></p>
+				<p class="info_text">WATER</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="time">
+			<div class="date">
+				<p class="snapshot-creation" id=time></p>
+				<p class="info_text">DATE</p>
+			</div>
+		</div>
+
+	</div>
+
 </body>
 
 </html>
